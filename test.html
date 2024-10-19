@@ -64,149 +64,110 @@
     </div>
 </section>
 
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
+        h1, h2 {
+            color: #283593;
+            text-align: center;
+        }
 
-<br>
-<section class="hero">
-        <div class="container">
-            <h1>Tournament Information</h1>
-            <p>General details about the Igiehon Mathematics Tournament 2024.</p>
-        </div>
-    </section>
+        .info-section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-    <section class="tournament-structure">
-        <div class="container">
-            <h2>Tournament Structure</h2>
+        .table-container {
+            margin: 20px 0;
+            overflow-x: auto; /* Allows scrolling for small screens */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #283593;
+            color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #283593;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Existing Navbar -->
+    <nav>
+        <!-- Your existing navigation items here -->
+    </nav>
+
+    <header>
+        <h1>Igiehon Mathematics Tournament Info</h1>
+    </header>
+
+    <section class="info-section">
+        <h2>Tournament Structure</h2>
+        <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th>Stage</th>
-                        <th>Description</th>
+                        <th>Round</th>
+                        <th>Details</th>
                     </tr>
-               
+                </thead>
+                <tbody>
                     <tr>
                         <td>Initial Round</td>
-                        <td>
-                            A 50-question objective exam administered to all participants. The top eight scorers qualify their schools for the finals.
-                            If two students from the same school are in the top eight, the next highest-scoring student qualifies their school.
-                        </td>
+                        <td>50-question objective exam for all participants. Top 8 qualify for Finals.</td>
                     </tr>
                     <tr>
                         <td>Finals</td>
-                        <td>
-                            The top eight schools compete in teams of two. Teams are divided into two groups based on their rankings. Group winners advance to the semi-finals.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Semi-Finals</td>
-                        <td>
-                            A single-elimination round for the top four teams, leading to the final and third-place match.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Finals</td>
-                        <td>
-                            The final match determines the overall winner, and a third-place match determines the runner-up.
-                        </td>
+                        <td>Team competition with the top 8 schools, 2 students each. Group stages leading to semi-finals.</td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
+        <h2>Prizes</h2>
+        <p>Exciting prizes for the top three scorers: ₦1,000,000 for 1st place, ₦750,000 for 2nd place, ₦500,000 for 3rd place, along with laptops for the top 3 students and consolation prizes.</p>
+
+        <h2>Registration</h2>
+        <p>Fill out the registration form through the Maths4Life website.</p>
+        <a href="https://maths4life.org/" target="_blank" class="btn">Register Now</a>
     </section>
 
-    <section class="prizes">
-        <div class="container">
-            <h2>Prizes</h2>
-            <ul>
-                <li><strong>1st Place:</strong> ₦1,000,000</li>
-                <li><strong>2nd Place:</strong> ₦750,000</li>
-                <li><strong>3rd Place:</strong> ₦500,000</li>
-                <li><strong>Top 3 Students:</strong> Laptops</li>
-                <li><strong>Top 10 Students, Teachers, and Schools:</strong> Consolation prizes</li>
-            </ul>
-        </div>
-    </section>
+    <!-- Existing Footer -->
+    <footer>
+        <!-- Your existing footer content here -->
+    </footer>
+</body>
+</html>
 
-
-
-
-<!--<section data-bs-version="5.1" class="list03 cid-urv1sRkkUh" id="list03-3u">
-  
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 mb-5 content-head">
-        <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-7"><strong>Structure and Format of the Igiehon Mathematics Tournament</strong></h3>
-        
-      </div>
-    </div>
-
-    <div class="row justify-content-left item features-without-image mt-0 mb-5 active">
-      <div class="col-12 col-md-12 col-lg-3">
-        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-7"><strong>1. Initial Round</strong></h5>
-      </div>
-      <div class="col-md-12 col-lg-8 item-wrapper">
-        <p class="mbr-text mbr-fonts-style mt-0 mb-0 display-7">
-          -&nbsp; 50-question objective exam for all participants.<br>-&nbsp; Top 8 highest-scoring students qualify their respective schools for the&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Finals.<br>-&nbsp; If two students from the same school are in the top 8, the next highest&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;scorer will qualify their school.
-        </p>
-      </div>
-    </div>
-    <div class="row justify-content-left item features-without-image mt-0 mb-5">
-      <div class="col-12 col-md-12 col-lg-3">
-        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-7"><strong>2. Team Qualification</strong></h5>
-      </div>
-      <div class="col-md-12 col-lg-8 item-wrapper">
-        <p class="mbr-text mbr-fonts-style mt-0 mb-0 display-7">
-          -&nbsp; Top 8 schools, each represented by 2 students, advance to the Finals.<br>&nbsp; &nbsp;&nbsp;<strong>*</strong> <em>Schools are divided into two groups based on initial rankings.</em><br></p>
-      </div>
-    </div>
-    <div class="row justify-content-left item features-without-image mt-0 mb-5">
-      <div class="col-12 col-md-12 col-lg-3">
-        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-7"><strong>3. Group Stage</strong></h5>
-      </div>
-      <div class="col-md-12 col-lg-8 item-wrapper">
-        <p class="mbr-text mbr-fonts-style mt-0 mb-0 display-7">-&nbsp; Teams within each group compete directly against each other.<br>&nbsp; &nbsp;&nbsp;<strong>*</strong><em> The top 2 teams with the highest points from each group move on to&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;the semi-finals.</em><br><a href="http://mobiri.se" class="text-primary"><br></a>
-        </p>
-      </div>
-    </div><div class="row justify-content-left item features-without-image mt-0 mb-5">
-      <div class="col-12 col-md-12 col-lg-3">
-        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-7"><strong>4. Semi-Finals &amp; Finals</strong></h5>
-      </div>
-      <div class="col-md-12 col-lg-8 item-wrapper">
-        <p class="mbr-text mbr-fonts-style mt-0 mb-0 display-7">-&nbsp; The 4 advancing teams will compete in a single-elimination format.<br>&nbsp; &nbsp;&nbsp;<strong>*</strong> <em>Teams will battle in matches to determine the third place and the final&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;champion.</em><br><br><br><strong>Tournament Officials</strong><br><strong>
-</strong><br><strong>Moderator:
-</strong><br>Each game will have a moderator. The moderator(s) will read the questions, award and deduct points, and enforce the rules of competition.
-<br><strong>Judges:
-</strong><br>Each game will have at least three judges. All judges' decisions concerning compliance to the rules and awarding of points will be final. Students are allowed to appeal to whether a question is correct or not, and the judges confer with the student to explain the correctness of such question.
-<br><strong>Scorekeeper:
-</strong><br>Each game will have at least one scorekeeper. The scorekeeper(s) will keep the official score and individual statistics. Games will not be considered final until the scorekeeper has declared the official score.
-<br><strong>Timekeeper:
-</strong><br>Each game will have one timekeeper. The timekeeper will enforce time limits and supervise the game clock.
-<br><strong>Equipment
-</strong><br>At the Tournament, each player will be provided with a buzzer – an electronic device that determines which player buzzes in to answer a question first.
-<br>A screen might be used to display questions that needs visual aid
-<br><strong>Time
-</strong><br>In all rounds (5 minutes each), the clock starts when the moderator begins reading the toss-up question. When the clock sounds the end of time, the game shall end. The team with more points at the end of the game wins. In the event of a tie: there will be an overtime period consisting of three toss-up questions. If the game is still tied after three toss-up questions, the moderator will continue to read toss-up questions until the score changes. A score change can happen if (1) a team answers correctly and receives points to win the game or (2) a team answers incorrectly and is given negative points, in which case the other team wins by default.
-<br><strong>Questions
-</strong><br>Each game uses toss-up questions worth 10 points each. Questions are selected from a pre-screened question bank. Questions are intended to test the contestants’ knowledge and application of Mathematics. The questions will cover the following areas: Algebra, Calculus, Geometry, Mensuration, Number/Numeration, Statistics, Probability, Trigonometry, Vectors and Mechanics. Questions may include history of Mathematics, trivia and current events related to Mathematics.
-<br><strong>Appeals
-</strong><br>An appeal is defined as a team’s petition to reconsider a decision/judgment on an answer. Success of an appeal shall be defined by a reversal by the judges to said decision/judgment.
-<br>All teams will be allowed one (1) appeal per game. If a team is successful in its first appeal, it will be granted a second appeal. Regardless of the outcome of the second appeal, no team shall have more than two appeals per game.
-<br><strong>Ethics and conduct
-</strong><br>All players, institutional representatives, and other persons associated with a team are bound to behave responsibly and ethically. This includes, but is not limited to: treating all participants, attendees, and officials with courtesy, not receiving or giving impermissible assistance, not creating the temptation for another to cheat, abiding by all decisions of the tournament officials, not colluding with another person to "fix" a match result, not intentionally "throwing" a match, honestly reporting details of game situations to tournament officials, and promptly reporting violations of this honour code to a tournament official.
-<br><strong>Rules and Regulations
-</strong><br>The tournaments rules and regulations for both the first-round and finals will be read to the contestants before the commencement of the tournament.<br><strong>Awards</strong><br>The top three highest-scoring individuals will receive ₦1,000,000 for 1st place, ₦750,000 for 2nd place, and ₦500,000 for 3rd place, along with exciting giveaways! Laptops will be awarded to the top 3 students, and consolation prizes will be given to the top 10 students, their teachers, and their schools.<br><br><strong>* Once registered! More steps to follow via email closer to contest day</strong>.<a href="http://mobiri.se" class="text-primary"><br></a>
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>  -->
 
 <section data-bs-version="5.1" class="features023 cid-upL8WYhI55" id="features023-3c">
-
-    
-
-    
     
     <div class="container">
         
