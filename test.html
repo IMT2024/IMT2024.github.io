@@ -89,45 +89,53 @@
         .btn:hover {
             background-color: #2b4278; /* Darker blue on hover */
         }
-		officials-section {
-    margin-top: 40px; /* Add some space above */
-    padding: 20px;
-    background-color: #f0f8ff; /* Light blue background */
-    border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.officials-container {
-    display: flex;
-    flex-wrap: wrap; /* Ensure officials cards stack neatly on smaller screens */
-    justify-content: space-between; /* Even spacing between cards */
-    gap: 20px; /* Space between the cards */
-}
-
-.official-card {
-    background-color: white;
-    border: 1px solid #ddd;
+		
+/* Tournament Officials Section */
+#tournament-officials {
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
     border-radius: 8px;
-    padding: 20px;
-    width: 30%; /* Adjust width for responsiveness */
-    min-width: 250px; /* Minimum width for smaller screens */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    max-width: 1200px;
+    text-align: left;
 }
 
-.official-card h3 {
-    color: #3a5eab; /* Blue for headings */
+#tournament-officials .section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.officials-info h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.official-card p {
-    color: #555; /* Grey for paragraph text */
+.officials-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-    .official-card {
-        width: 100%; /* Make cards full width on smaller screens */
+@media screen and (max-width: 768px) {
+    #tournament-officials {
+        padding: 20px;
+    }
+
+    .officials-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .officials-info p {
+        font-size: 0.95rem;
     }
 }
+
+
     </style>
  
 
