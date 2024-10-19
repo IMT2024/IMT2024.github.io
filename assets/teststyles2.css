@@ -5,6 +5,12 @@
     margin: 0 auto; /* Centering the container */
 }
 
+header {
+    padding-top: 60px; /* Adjust this value as needed */
+    /* Other existing styles */
+}
+
+
 h1, h2 {
     color: #283593; /* Consistent heading color */
     text-align: center; /* Center align headings */
