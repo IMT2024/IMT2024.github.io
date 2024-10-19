@@ -1,155 +1,146 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-a {
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
     color: #333;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header Styles */
+/* Header */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links li a {
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
-.nav-links li a:hover,
-.nav-links li a.active {
-    background: #555;
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-/* Hero Section */
-.hero {
-    background: #fafafa;
-    padding: 100px 20px;
+    background-color: #283593;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    color: #333;
+h1 {
+    margin: 0;
 }
 
-.hero p {
-    font-size: 1.2rem;
+/* Mission Statement */
+.mission {
+    background-color: #c5cae9;
+    padding: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mission h2 {
+    color: #283593;
+    font-size: 24px;
+}
+
+.mission p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Section Headings */
+h2 {
+    color: #283593;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Resources Section */
+.resources {
+    padding: 20px;
+    background-color: #e8eaf6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.resource-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.resource-item h3 {
+    color: #283593;
+}
+
+.resource-item a {
+    display: inline-block;
     margin-top: 10px;
-    color: #555;
+    text-decoration: none;
+    color: white;
+    background-color: #283593;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-/* Resources List Section */
-.resources-list {
-    padding: 50px 20px;
-    background: #fff;
-    margin-bottom: 20px;
+.resource-item a:hover {
+    background-color: #1a237e;
 }
 
-.resources-list h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+/* Competition List Section */
+.competition-list {
+    padding: 20px;
+    background-color: #c5cae9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.resource-items {
-    list-style-type: none;
+.competition-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
 }
 
-.resource-items li {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-left: 5px solid #007acc;
+.competition-item h3 {
+    color: #283593;
 }
 
-.resource-items li a {
-    font-weight: bold;
-    color: #007acc;
+.competition-item a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #283593;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-.resource-items li a:hover {
-    text-decoration: underline;
+.competition-item a:hover {
+    background-color: #1a237e;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #283593;
+    color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-footer p {
-    margin: 0;
-}
-
-/* Responsive Styles */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
+    .resources, .competition-list {
         flex-direction: column;
+        align-items: center;
     }
 
-    .nav-links.nav-active {
-        display: flex;
-    }
-
-    .burger {
-        display: block;
-        color: #fff;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .resources-list h2 {
-        font-size: 1.5rem;
+    .resource-item, .competition-item {
+        width: 90%;
     }
 }
