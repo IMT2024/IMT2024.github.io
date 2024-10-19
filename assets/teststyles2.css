@@ -10,6 +10,14 @@ header {
     /* Other existing styles */
 }
 
+.mission-statement {
+    background-color: #f9f9f9; /* Light background for emphasis */
+    padding: 20px; /* Space around the content */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Space below the mission statement */
+}
+
 
 h1, h2 {
     color: #283593; /* Consistent heading color */
