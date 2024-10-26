@@ -57,87 +57,307 @@
 	</nav>
 </section>
 
-<section data-bs-version="5.1" class="form5 cid-upEIv9JkLm" id="form02-2o">
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 content-head">
-                <div class="mbr-section-head mb-5">
-                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-7"><strong>School and Teacher Information Form
-</strong><div>Kindly provide the following information about your school, teacher, and participating students.</div><div><strong>
-</strong></div><div><strong>
-</strong></div><div><strong>
-</strong></div><div><strong>
-</strong></div></h3>
-                    <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">
-<div><span style="font-size: calc(1.14rem + 0.26 * ((100vw - 62rem) / 25)); background-color: transparent;">Tournament Date: November 16, 2024&nbsp;</span></div><div><span style="font-size: calc(1.14rem + 0.26 * ((100vw - 62rem) / 25)); background-color: transparent;">Registration Deadline: November 1, 2024</span></div><div><span style="font-size: calc(1.14rem + 0.26 * ((100vw - 62rem) / 25)); text-align: center; background-color: transparent;">Venue: Edo Innovation Hub, Benin City, Edo State</span></div><div>
-</div><div><strong>Eligibility</strong>: Open to all Senior Secondary Schools in Edo State</div><br><br><div>Kindly provide the following information about your school, teacher, and participating students.
-</div><div>Tournament Date: November 16, 2024
-</div><div>Venue: Edo Innovation Hub, Benin City, Edo State
-</div><div>Registration Deadline: November 1, 2024
-</div><div>Eligibility: Open to all Senior Secondary Schools in Edo State
-</div><div>School Information
-</div><div>School Name
-</div><div>Enter your school's name
-</div><div>School Address
-</div><div>Enter your school's address
-</div><div>Teacher Information
-</div><div>Teacher's Full Name
-</div><div>Enter teacher's full name
-</div><div>Teacher's Phone Number
-</div><div>+234...
-</div><div>Teacher's Email Address
-</div><div>teacher@school.com
-</div><div>Student 1 Information
-</div><div>Student 1 Full Name
-</div><div>Enter Student 1's full name
-</div><div>Student 1 Preferred Contact
-</div><div>Select contact method
-</div><div>Student 2 Information
-</div><div>Student 2 Full Name
-</div><div>Enter Student 2's full name
-</div><div>Student 2 Preferred Contact
-</div><div>Select contact method
-</div><div>Additional Information
-</div><div>How did you hear about us?
-</div><div>Select an option
-</div><div>I confirm the information provided is accurate, and the teacher listed will accompany the students on the tournament day.</div><div>
-</div><div>
-</div><div>
-</div><div>
-</div><div>
-</div><div>
-</div></h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMT Study Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5faff;
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 30px 0;
+            color: #003366;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* Main Content Layout */
+        .content-layout {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Collapsible Section Container */
+        .collapsible-container {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Blog Section */
+        .blog-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Collapsible Section Styles */
+        .collapsible {
+            background-color: #e0f2ff;
+            color: #003366;
+            cursor: pointer;
+            padding: 12px;
+            border: 1px solid #cce4ff;
+            outline: none;
+            text-align: left;
+            font-size: 1.2em;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .collapsible:hover {
+            background-color: #d1eaff;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: #0056b3;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: '\2212';
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f0f8ff;
+            border-radius: 0 0 8px 8px;
+            border-top: 1px solid #cce4ff;
+        }
+
+        /* Blog Card Styles */
+        .blog-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .blog-card-content {
+            padding: 15px;
+        }
+
+        .blog-card h3 {
+            margin: 0;
+            font-size: 1.4em;
+            color: #003366;
+        }
+
+        .blog-card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .blog-card a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .blog-card a:hover {
+            color: #003366;
+        }
+
+        /* Student Tools Section */
+        .student-tools {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .student-tools h2 {
+            font-size: 1.8em;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .tool-links a {
+            display: inline-block;
+            background-color: #e0f2ff;
+            color: #003366;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .tool-links a:hover {
+            background-color: #d1eaff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (Retain IMT's existing navbar here) -->
+    <nav>
+        <!-- Add IMT's existing navbar code here -->
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <header>
+            <h1>IMT Study Resources</h1>
+            <p>Discover curated resources, tools, and insights for Nigerian secondary school students.</p>
+        </header>
+
+        <!-- Content Layout -->
+        <div class="content-layout">
+
+            <!-- Collapsible Sections (Primary) -->
+            <section class="collapsible-container">
+                <button class="collapsible">Educational Resources</button>
+                <div class="content">
+                    <ul>
+                        <li><a href="https://www.waecnigeria.org" target="_blank">WAEC Official Site</a></li>
+                        <li><a href="https://www.neco.gov.ng" target="_blank">NECO Official Site</a></li>
+                        <li><a href="https://www.jamb.gov.ng" target="_blank">JAMB Official Site</a></li>
+                        <li><a href="https://myschool.ng/classroom" target="_blank">Exam Past Questions</a></li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="N4J6QTkXWOkI50UegBUE86lM7wkrf3Bo0XZyFHZmS0xWBWD++h8V+1UKuGXBJMj7+YsXv3efCH0RzzSZGrP8NMrUyN/Zx5vGOoRQkSoNRMAdstBmIqlpJKlLvFcRPM/K">
-                    <div class="row">
-                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
-                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
-                            Oops...! some problem!
-                        </div>
+
+                <button class="collapsible">Free Math Resources</button>
+                <div class="content">
+                    <ul>
+                        <li><a href="https://www.khanacademy.org/math" target="_blank">Khan Academy Math</a></li>
+                        <li><a href="https://ng.ixl.com/math/" target="_blank">IXL Math</a></li>
+                        <li><a href="http://www.purplemath.com" target="_blank">Purplemath</a></li>
+                        <li><a href="https://www.transum.org" target="_blank">Transum Mathematics</a></li>
+                    </ul>
+                </div>
+
+                <button class="collapsible">Scholarship Opportunities</button>
+                <div class="content">
+                    <ul>
+                        <li><a href="https://www.mtnonline.com/mtn-scholarships" target="_blank">MTN Foundation Scholarship</a></li>
+                        <li><a href="https://scholarships.totalenergiescsrewards.com" target="_blank">NNPC/Total Scholarship</a></li>
+                        <li><a href="https://www.jimoviafoundation.org" target="_blank">Jim Ovia Foundation Scholarship</a></li>
+                        <li><a href="https://www.dragnetnigeria.com/agbami" target="_blank">Agbami Scholarship</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Blog Section (Secondary) -->
+            <section class="blog-section">
+                <div class="blog-card">
+                    <img src="blog-image1.jpg" alt="Blog Post 1">
+                    <div class="blog-card-content">
+                        <h3>5 Tips for Excelling in WAEC Exams</h3>
+                        <p>Explore expert tips to succeed in WAEC exams...</p>
+                        <a href="#">Read More</a>
                     </div>
-                    <div class="dragArea row">
-                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
-                            <input type="text" name="name" placeholder="School Name" data-form-field="name" class="form-control" value="" id="name-form02-2o">
-                        </div>
-                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
-                            <input type="email" name="email" placeholder="School Email" data-form-field="email" class="form-control" value="" id="email-form02-2o">
-                        </div>
-                        <div class="col-12 form-group mb-3" data-for="textarea">
-                            <textarea name="textarea" placeholder="School Full address inc LGA" data-form-field="textarea" class="form-control" id="textarea-form02-2o"></textarea>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn"><button type="submit" class="btn btn-primary display-7">Submit</button></div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="blog-image2.jpg" alt="Blog Post 2">
+                    <div class="blog-card-content">
+                        <h3>Top Free Math Resources for Nigerian Students</h3>
+                        <p>Discover online math tools for better exam prep...</p>
+                        <a href="#">Read More</a>
                     </div>
-                </form>
-            </div>
+                </div>
+            </section>
         </div>
-    </div>
-</section>
+
+        <!-- Student Tools Section -->
+        <section class="student-tools">
+            <h2>Student Tools</h2>
+            <div class="tool-links">
+                <a href="https://www.desmos.com/scientific" target="_blank">Scientific Calculator</a>
+                <a href="https://quizlet.com" target="_blank">Flashcards</a>
+                <a href="https://www.studypug.com/timer" target="_blank">Study Timer</a>
+                <a href="https://www.trello.com" target="_blank">Exam Planner</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Retain IMT's existing footer here) -->
+    <footer>
+        <!-- Add IMT's existing footer code here -->
+        <p>&copy; 2024 IMT. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
 
 <section data-bs-version="5.1" class="features023 cid-upEIv2tPUr" id="features023-2h">
 
