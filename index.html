@@ -1015,6 +1015,99 @@
     </div>
 </section>
 
+	    #newsletterPopup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #popupContent {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #popupContent h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    #popupContent p {
+      margin-bottom: 15px;
+    }
+
+    .input-field {
+      padding: 10px;
+      width: 80%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-btn {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .close-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .close-btn:hover {
+      background-color: darkred;
+    }
+
+    /* Fade in and out effect for the pop-up */
+    .fade {
+      animation: fadeIn 0.5s;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Newsletter Popup -->
+  <div id="newsletterPopup" class="fade">
+    <div id="popupContent">
+      <h2>Join Our Newsletter</h2>
+      <p>Sign up now and stand a chance to win prizes! 5 randomly selected people will win once we reach 200 sign-ups.</p>
+      <p>Winners must follow our social media handles to claim their prize.</p>
+      
+      <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+      <button class="submit-btn" onclick="submitNewsletter()">Sign Up</button>
+      
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
 <section data-bs-version="5.1" class="footer4 cid-uoZw4qeFXM" once="footers" id="footer-4-uoZw4qeFXM">
 
     
@@ -1031,6 +1124,44 @@
 </section>
 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/parallax/jarallax.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/masonry/masonry.pkgd.min.js"></script>  <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>  <script src="assets/embla/embla.min.js"></script>  <script src="assets/embla/script.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid/formoid.min.js"></script>  
+<script>
+    // Show the pop-up after a delay (customize as needed)
+    window.onload = function() {
+      setTimeout(function() {
+        document.getElementById("newsletterPopup").style.display = "flex";
+      }, 1000); // Delay of 1 second before showing the pop-up
+    };
+
+    // Close the pop-up
+    function closePopup() {
+      document.getElementById("newsletterPopup").style.display = "none";
+    }
+
+    // Simulate the number of sign-ups (in real case, this data will come from the server)
+    let totalSignUps = 199; // This would be dynamic based on actual sign-up data
+
+    // Submit the newsletter form
+    function submitNewsletter() {
+      const email = document.getElementById("email").value;
+      if (email) {
+        totalSignUps++; // Increment the sign-up count
+
+        // Check if we have reached 200 sign-ups
+        if (totalSignUps === 200) {
+          alert("Congratulations! You've helped us reach 200 sign-ups. 5 lucky winners will be selected from the 200th sign-up batch. Stay tuned!");
+        }
+
+        // Simulate adding the email to a database (replace with actual backend integration)
+        console.log("Email submitted:", email);
+
+        // Close the pop-up after submission
+        closePopup();
+      } else {
+        alert("Please enter a valid email.");
+      }
+    }
+  </script>
+
   
   
 </body>
